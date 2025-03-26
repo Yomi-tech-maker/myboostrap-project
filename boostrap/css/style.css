@@ -1,0 +1,23 @@
+/* breakpoint for medium */
+body::after{
+    display: block;
+    content: "";
+    height: 72px;
+}
+@media(min-width: 768px){
+.news-input{
+    width: 50%;
+
+}
+
+}
+
+
+#instructors img{
+    width: 100px;
+    background-color: rgb(219,219,219);
+}
+
+#boxes .card{
+    min-height: 260px;
+}
