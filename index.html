@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<body>
+  <h2>Made this change from my phone! 🚀</h2>)
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-light fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand text-light">Heros World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a href="#learn" class="navbar-link text-light px-2">What you 'll learn</a>
+
+                    </li>
+                    <li class="navbar-list">
+                        <a href="#Question" class="navbar-link text-light px-2">Questions</a>
+                    </li>
+                
+
+                
+                    <li class="navbar-list">
+                        <a href="#Instructors" class="navbar-link text-light px-2">Instructors</a>
+                    </li>
+                
+
+        
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Showcase -->
+    <section class="bg-dark text-light text-center text-md-start pb-4 pb-md-0">
+        <div class="container">
+            <div class="d-md-flex align-items-center py-5">
+                <div class="px-lg-5">
+                    <h1>Welcome to <span class="text-warning">web development</span></h1>
+                    <p class="lead py-2"> Go from an absolute beginner to become a paid professionals. working on real
+                        life project</p>
+                    <button class="btn btn-primary btn-lg m-3 "data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</button>
+                </div>
+                <img src="IMG-20250310-WA0037.png" alt="responsive-image"
+                    class="img-fluid  d-md.block bg-primary rounded-circle">
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Registration form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">
+            Fill out this form and we will get back to you
+          </p>
+          <div class="mb-3">
+            <label for="Firstname" class="form-label">First name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your first name">
+          </div>
+          <div class="mb-3">
+            <label for="Last name" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your last name">
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="Phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your phone number">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- News letter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between">
+                <h3 class="text-center text-md-start"> Signup For Our News</h3>
+                <div class="input-group mb-3 news-input">
+                    <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Send</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Boxes -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md g-2 g-md-4">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body ">
+                            <div class="h1">
+                                <i class="bi bi-diamond-fill"></i>
+
+                            </div>
+                            <h5 class="card-title">
+                                Virtual
+                            </h5>
+                            <p class="card-text">Some quick eexample text to build on the card title</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md g-2 g-md-4">
+                    <div class="card bg-secondary text-light h-100">
+                        <div class="card-body">
+                            <div class="h1">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h5 class="card-title">
+                                Project Base
+                            </h5>
+                            <p class="card-text">Some quick eexample text to build on the card title</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md g-2 g-md-4">
+                    <div class="card bg-dark text-light h-100">
+                        <div class="card-body">
+                            <div class="h1"></div>
+                            <i class="bi bi-diamond-half"></i>
+                            <h5 class="card-title">
+                                Certificate
+                            </h5>
+                            <p class="card-text">Some quick eexample text to build on the card title</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- intro section -->
+    <section class="py-5  bg-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md  m-5">
+                    <img src="IMG-2.png" class="img-fluid rounded-circle" alt="...">
+
+                </div>
+                <div class="col-md text-center text-md-start">
+                    <h3> Go from zero to Hero</h3>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium labore nihil
+                        placeat possimus nobis ex sequi vitae, totam, tenetur delectus delenit
+                        i voluptate iste facere nemo porro aliquid distinctio earum harum!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat suscipit possimus odit earum,
+                        exercitationem soluta natus deleniti ad illo deserunt id veritatis ipsum
+                        quod explicabo, animi minus harum incidunt modi.</p>
+
+                    <a href="#" class="btn btn-primary ms-auto"><i class="bi bi-chevron-right"></i>Read More</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- learn section -->
+    <section class="py-5 bg-dark" id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-between text-center text-light text-md-start">
+                <div class="col-md">
+                    <h3>Learn Web-Development</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Et, beatae expedita aperiam
+                        in perspiciatis voluptate dignissimos dicta fugit delectus labore, aliquid ad
+                        nisi nam maiores exercitationem a unde possimus corrupti.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus fuga adipisci eum quisquam quas
+                        itaque animi doloribus explicabo architecto, blanditiis saepe ea omnis
+                        mollitia autem dolore, sit tempore? Hic, tempora.</p>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-chevron-right"></i>Read More</a>
+                </div>
+                <div class="col-md p-5 g-3">
+                    <img src="img-5.png" class="img-fluid rounded-circle" alt="....">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Accordion Section -->
+    <section class="py-5 " id="Question">
+        <div class="container">
+            <h2 class="text-center">Frequently Ask Questions</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is the duration of this course?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            What will I be able to build?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Is there certificate after the training?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="py-5 bg-primary" id="Instructors">
+        <div class="container">
+            <h2 class="text-center text-light">Our Instructor</h2>
+            <p class="lead text-center text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                quos. Cumque fuga architecto dicta eos corporis repudiandae asperiores. Repellat quia optio animi!
+                Perferendis
+                atque minus nesciunt culpa expedita earum error.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="" class="img-fluid rounded-circle mb-3">
+                            <h3 class="card-title">
+                                Michael Jack</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores a
+                                deserunt quam laborum inventore, veniam sed recusandae! Distinctio fuga sint unde
+                                repellendus sit cupiditate. Alias modi nostrum ad. Laborum, voluptates!</p>
+
+                            <a href="#" class="bi bi-twitter bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook  bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-linkedin bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-instagram bg-dark mx-1"></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="" class="img-fluid rounded-circle mb-3">
+                            <h3 class="card-title">
+                                Raph Smith</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores a
+                                deserunt quam laborum inventore, veniam sed recusandae! Distinctio fuga sint unde
+                                repellendus sit cupiditate. Alias modi nostrum ad. Laborum, voluptates!</p>
+
+                            <a href="#" class="bi bi-twitter bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook  bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-linkedin bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-instagram bg-dark mx-1"></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="" class="img-fluid rounded-circle mb-3">
+                            <h3 class="card-title">
+                                Willam Brown</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores a
+                                deserunt quam laborum inventore, veniam sed recusandae! Distinctio fuga sint unde
+                                repellendus sit cupiditate. Alias modi nostrum ad. Laborum, voluptates!</p>
+
+                            <a href="#" class="bi bi-twitter bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook  bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-linkedin bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-instagram bg-dark mx-1"></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="" class="img-fluid rounded-circle mb-3">
+                            <h3 class="card-title">
+                                David Wilson</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores a
+                                deserunt quam laborum inventore, veniam sed recusandae! Distinctio fuga sint unde
+                                repellendus sit cupiditate. Alias modi nostrum ad. Laborum, voluptates!</p>
+
+                            <a href="#" class="bi bi-twitter bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-facebook  bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-linkedin bg-dark mx-1"></a>
+                            <a href="#" class="bi bi-instagram bg-dark mx-1"></a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="py-5">
+        <div class="container">
+        <div class="row align-items-center justufy-content between">
+        <div class="col-md">
+            <h2 class="text-center">Contact Info </h2>
+            <ul class="list-group list-group-flush lead">
+                <li class="list-group-item"><span class="fw-bold">Main Location:</span> Ikeja, Lagos-Main</li>
+                <li class="list-group-item"><span class= "fw-bold">Enrolment Email:</span> henryreal4life@gmail.com</li>
+                <li class="list-group-item"><span class= "fw-bold">Contact Phone: </span> 08168272551</li>
+                <li class="list-group-item"><span class="fw-bold">Main Office:</span> Magboro</li>
+                <li class="list-group-item"><span class="fw-bold">Address:</span>: Goodluck Street</li>
+              </ul>
+        </div>
+        <div class="col-md g-5 p-4"> <img src="download.png" alt="...." class="img-fluid rounded-circle">
+        </div>
+    
+        </div> 
+      
+ 
