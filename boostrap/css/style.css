@@ -1,36 +1,40 @@
-/* ====================================
-   Heros World - Custom Styles
-   ==================================== */
+/* ========================================
+   Heros World – Custom CSS (2025)
+   Fixes loading + makes it look amazing
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #333;
-}
-
-/* Fix content jumping under fixed navbar */
-body::after {
-    content: "";
-    display: block;
-    height: 80px;                 /* Space for fixed navbar */
+    padding-top: 76px;                 /* Prevents content from hiding under fixed navbar */
 }
 
 /* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
-/* Hero Section - Make text pop */
+/* Hero Section */
 section.bg-dark h1 {
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 section.bg-dark .lead {
-    font-size: 1.3rem;
-    opacity: 0.9;
+    font-size: 1.25rem;
+    opacity: 0.95;
+}
+section.bg-dark .btn {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border-radius: 50px;
 }
 
-/* Newsletter Input - Responsive width */
+/* Newsletter – perfect on mobile & desktop */
 @media (min-width: 768px) {
     .input-group {
         max-width: 500px;
@@ -38,107 +42,97 @@ section.bg-dark .lead {
     }
 }
 
-/* Feature Boxes - Hover effect */
+/* Feature Cards – hover effect + same height */
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-}
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
-}
-
-/* Make cards same height */
-.row.g-4 > div {
-    display: flex;
-}
-.row.g-4 .card {
-    width: 100%;
-}
-
-/* Instructors Section */
-#Instructors img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border: 5px solid white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-}
-#Instructors img:hover {
-    transform: scale(1.1);
-}
-
-#Instructors .card {
     border-radius: 15px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
-#Instructors .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25) !important;
 }
-
-#Instructors .bi {
-    transition: all 0.3s ease;
-}
-#Instructors .bi:hover {
-    color: #0d6efd !important;
-    transform: scale(1.3);
+.card-body {
+    padding: 3rem 1.5rem;
 }
 
-/* FAQ Section */
-#Question .accordion-button {
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-#Question .accordion-button:not(.collapsed) {
-    background-color: #0d6efd;
-    color: white;
+/* Rounded images everywhere */
+.img-fluid.rounded-circle {
+    object-fit: cover;
+    border: 8px solid rgba(255,255,255,0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-/* Contact Section */
-#contact img {
-    border: 8px solid #fff;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* Button enhancements */
-.btn-primary {
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 50px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.btn-light {
-    background-color: rgba(255,255,255,0.2);
-    border: 2px solid white;
-    backdrop-filter: blur(5px);
-}
-.btn-light:hover {
-    background-color: white;
-    color: #212529;
-}
-
-/* Mobile fixes */
+/* Intro & Learn sections – better spacing on mobile */
 @media (max-width: 767px) {
-    section.py-5 {
-        padding: 3rem 0 !important;
+    .row.align-items-center > div {
+        text-align: center !important;
     }
-    .display-5 {
-        font-size: 2rem;
-    }
-    #Instructors .col-lg-3 {
+    .row.align-items-center img {
         margin-bottom: 2rem;
     }
 }
 
-/* Footer (optional - add later if you want) */
+/* FAQ Accordion – nicer look */
+.accordion-button {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: none;
+}
+
+/* Instructors */
+#Instructors img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 6px solid white;
+    transition: transform 0.3s ease;
+}
+#Instructors img:hover {
+    transform: scale(1.15);
+}
+#Instructors .card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+#Instructors .bi:hover {
+    color: #0d6efd !important;
+    transform: scale(1.4);
+}
+
+/* Contact map image */
+#contact img.rounded-circle {
+    max-height: 300px;
+    width: auto;
+}
+
+/* Buttons */
+.btn-primary {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-light {
+    background: rgba(255,255,255,0.15);
+    border: 2px solid white;
+}
+.btn-light:hover {
+    background: white;
+    color: #212529;
+}
+
+/* Optional dark footer (add if you want) */
 footer {
     background: #111;
     color: #888;
     text-align: center;
-    padding: 2rem 0;
-    font-size: 0.9rem;
+    padding: 3rem 0;
+    margin-top: 4rem;
 }
