@@ -1,138 +1,172 @@
-/* ========================================
-   Heros World – Custom CSS (2025)
-   Fixes loading + makes it look amazing
-   ======================================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* ============================
+   GLOBAL STYLING
+============================*/
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7;
-    color: #333;
-    padding-top: 76px;                 /* Prevents content from hiding under fixed navbar */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background: #f8f9fa;
 }
 
-/* Smooth scrolling */
-html { scroll-behavior: smooth; }
-
-/* Hero Section */
-section.bg-dark h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-}
-section.bg-dark .lead {
-    font-size: 1.25rem;
-    opacity: 0.95;
-}
-section.bg-dark .btn {
-    padding: 14px 32px;
-    font-size: 1.1rem;
-    border-radius: 50px;
+/* Add spacing under the fixed navbar */
+body::before {
+  content: "";
+  display: block;
+  height: 70px;
 }
 
-/* Newsletter – perfect on mobile & desktop */
-@media (min-width: 768px) {
-    .input-group {
-        max-width: 500px;
-        margin-left: auto;
-    }
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
 }
 
-/* Feature Cards – hover effect + same height */
-.card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-}
-.card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25) !important;
-}
-.card-body {
-    padding: 3rem 1.5rem;
+/* Smooth animation for hover effects */
+a, button, .card {
+  transition: all 0.3s ease-in-out;
 }
 
-/* Rounded images everywhere */
-.img-fluid.rounded-circle {
-    object-fit: cover;
-    border: 8px solid rgba(255,255,255,0.2);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+/* ============================
+   NAVBAR
+============================*/
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-/* Intro & Learn sections – better spacing on mobile */
-@media (max-width: 767px) {
-    .row.align-items-center > div {
-        text-align: center !important;
-    }
-    .row.align-items-center img {
-        margin-bottom: 2rem;
-    }
+.nav-link {
+  font-size: 1.05rem;
 }
 
-/* FAQ Accordion – nicer look */
-.accordion-button {
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-.accordion-button:not(.collapsed) {
-    background-color: #0d6efd;
-    color: white;
-    box-shadow: none;
+.nav-link:hover {
+  color: #ffc107 !important;
 }
 
-/* Instructors */
-#Instructors img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border: 6px solid white;
-    transition: transform 0.3s ease;
-}
-#Instructors img:hover {
-    transform: scale(1.15);
-}
-#Instructors .card {
-    border-radius: 20px;
-    overflow: hidden;
-}
-#Instructors .bi:hover {
-    color: #0d6efd !important;
-    transform: scale(1.4);
+/* ============================
+   HERO / SHOWCASE
+============================*/
+section.bg-dark {
+  background: linear-gradient(to right, #000000, #1a1a1a);
 }
 
-/* Contact map image */
-#contact img.rounded-circle {
-    max-height: 300px;
-    width: auto;
+section.bg-dark img {
+  border: 5px solid #fff;
 }
 
-/* Buttons */
+/* ============================
+   BUTTONS
+============================*/
 .btn-primary {
-    border-radius: 50px;
-    padding: 12px 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.btn-light {
-    background: rgba(255,255,255,0.15);
-    border: 2px solid white;
-}
-.btn-light:hover {
-    background: white;
-    color: #212529;
+  background: #0d6efd;
+  border-radius: 30px;
+  padding: 10px 25px;
 }
 
-/* Optional dark footer (add if you want) */
+.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #084298;
+}
+
+.btn-dark:hover {
+  transform: scale(1.05);
+}
+
+/* ============================
+   NEWSLETTER SECTION
+============================*/
+.input-group input {
+  border-radius: 30px 0 0 30px;
+}
+
+.input-group button {
+  border-radius: 0 30px 30px 0;
+}
+
+/* ============================
+   FEATURE CARDS
+============================*/
+.card {
+  border: none;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.card i {
+  color: #ffc107;
+}
+
+/* ============================
+   COURSE INTRO SECTION
+============================*/
+section.bg-light img {
+  border: 5px solid #ddd;
+}
+
+/* ============================
+   LEARN SECTION (Dark)
+============================*/
+#learn img {
+  border: 5px solid #fff;
+}
+
+/* ============================
+   ACCORDION / FAQ
+============================*/
+.accordion-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* ============================
+   INSTRUCTORS
+============================*/
+#Instructors .card {
+  border-radius: 20px;
+}
+
+#Instructors img {
+  border: 4px solid #0d6efd;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#Instructors img:hover {
+  transform: scale(1.1);
+}
+
+/* ============================
+   CONTACT SECTION
+============================*/
+.list-group-item {
+  background: transparent;
+  padding: 15px 0;
+  font-size: 1.1rem;
+}
+
+.list-group-item span {
+  color: #0d6efd;
+}
+
+.contact-img {
+  border-radius: 50%;
+  border: 5px solid #ddd;
+}
+
+/* ============================
+   FOOTER (Optional)
+============================*/
 footer {
-    background: #111;
-    color: #888;
-    text-align: center;
-    padding: 3rem 0;
-    margin-top: 4rem;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 50px;
 }
